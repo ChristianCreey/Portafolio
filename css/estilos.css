@@ -1,0 +1,151 @@
+/* Contenedor principal */
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 70vh; /* Ajusta esto según necesites */
+text-align: center;
+}
+  
+/* Reset básico */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background-color: #ffffff;
+color: #000000;
+font-family: sans-serif;
+padding: 2rem;
+}
+
+/* Top bar */
+.top-bar {
+position: absolute;
+top: 20px;
+right: 20px;
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.top-bar nav a {
+color: #000;
+text-decoration: none;
+font-size: 14px;
+transition: color 0.3s;
+}
+
+.top-bar nav a:hover {
+color: #4285f4;
+}
+
+.apps-icon {
+font-size: 20px;
+line-height: 1;
+cursor: pointer;
+}
+
+.user-initial {
+background-color: #ea4335;
+color: #fff;
+border-radius: 50%;
+width: 32px;
+height: 32px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+cursor: pointer;
+}
+
+/* Logo estilo Google */
+.logo {
+font-size: 4rem; 
+font-weight: bold;
+margin-top: 2rem;
+}
+
+.g {
+color: #4285f4;
+}
+.o {
+color: #ea4335;
+}
+.o2 {
+color: #fbbc05;
+}
+.l {
+color: #34a853;
+}
+
+/* Buscador */
+.search-bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.search-bar input {
+width: 90%;
+max-width: 600px;
+padding: 1rem;
+border-radius: 30px;
+border: 1px solid #ccc;
+font-size: 1.2rem;
+text-align: center;
+cursor: pointer;
+}
+
+/* Íconos */
+.icons {
+margin-top: 2rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1.5rem;
+width: 100%;
+}
+
+.icon {
+background: #1e0fc9;
+color: white;
+padding: 1rem 2rem;
+border-radius: 20px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.icon:hover {
+background: #3b29f2;
+}
+
+/* Sección secundaria */
+.hidden {
+display: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+.logo {
+    font-size: 2.5rem;
+}
+
+.search-bar input {
+    width: 100%;
+}
+
+.icon {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+.top-bar {
+    flex-direction: column;
+    align-items: flex-end;
+}
+}
