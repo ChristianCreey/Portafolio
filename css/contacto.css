@@ -1,0 +1,198 @@
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+    color: #2d3436;
+}
+
+.contacto-container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+/* Encabezado FAMG */
+.famg-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #4285f4, #34a853, #fbbc05, #ea4335);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.engineering-path h1 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.road-to {
+    font-size: 1.5rem;
+    color: white;
+    margin: 1rem 0;
+}
+
+.famg {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Iconos de contacto */
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    min-width: 70px;
+    flex-shrink: 0;
+}
+
+/* Agrega estos estilos al final de tu contacto.css */
+.contacto-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinea verticalmente */
+    gap: 2rem;
+    margin: 2rem auto; /* Centrado horizontal */
+    padding: 0 10px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgb(0, 0, 0); /* Color del texto */
+    transition: all 0.3s ease;
+    min-width: 80px;
+}
+
+.icon-item i {
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-item:hover {
+    transform: translateY(-5px);
+}
+
+.icon-item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+/* Contenido de contacto */
+.contacto-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.contact-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.info-card i {
+    font-size: 1.5rem;
+    color: #4285f4;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4285f4;
+}
+
+button {
+    padding: 1rem 2rem;
+    background: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+button:hover {
+    background: #357abd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contacto-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .famg-header {
+        padding: 1rem;
+    }
+    
+    .engineering-path h1 {
+        font-size: 2.5rem;
+    }
+    
+    .company-logos {
+        gap: 1rem;
+    }
+    
+    .form-group {
+        grid-template-columns: 1fr;
+    }
+}
