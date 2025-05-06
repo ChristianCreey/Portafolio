@@ -198,9 +198,12 @@ cursor: pointer;
     transition: transform 0.2s;
     min-width: 70px;
     flex-shrink: 0;
+    text-decoration: none;
+    color: inherit;
 }
 
 .icon-item:hover {
+    text-decoration: none;
     transform: scale(1.05);
 }
   
