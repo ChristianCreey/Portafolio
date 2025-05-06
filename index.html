@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Christian Emmanuel Cruz Reyes</title>
 </head>
 <body>
@@ -17,6 +18,7 @@
   </header>
 
   <main class="container">
+    <!-- logo Christian -->
     <h1 class="logo">
       <span class="g">C</span>
       <span class="o">h</span>
@@ -28,22 +30,94 @@
       <span class="g">a</span>
       <span class="l">n</span>
     </h1>
-
-    <div class="search-bar" onclick="mostrarSecciones()">
-      <input type="text" placeholder="Buscar información" readonly />
+    <!-- Buscador de información -->
+    <div class="search-container">
+      <div class="search-bar">
+        <div class="search-icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <input type="text" placeholder="Buscar información">
+        <div class="search-actions">
+          <div class="voice-search">
+            <i class="fas fa-microphone"></i>
+          </div>
+          <div class="image-search">
+            <i class="fas fa-camera"></i>
+          </div>
+        </div>    
+      </div>
+      <!-- <div class="search-buttons">
+        <button>Buscar en Christian</button>
+        <button>Voy a tener suerte</button>
+      </div> -->
     </div>
-
-    <section class="icons">
-      <div class="icon">Sobre mí</div>
-      <div class="icon">Proyectos</div>
-      <div class="icon">Tecnologías</div>
-      <div class="icon">Experiencia</div>
-      <div class="icon">Educacion</div>
-      <div class="icon">Competiciones</div>
-      <div class="icon">Contacto</div>
-      <div class="icon">intereses</div>
-      <div class="icon">CV</div>
-    </section>
+    <!-- Iconos -->
+    <div class="icon-container">
+      <!-- Sobre mí -->
+      <div class="icon-item" onclick="mostrarSecciones('sobre-mi')">
+        <div class="icon-circle">
+          <i class="fas fa-user"></i>
+        </div>
+        <span>Sobre mí</span>
+      </div>
+      <!-- Proyectos -->
+      <div class="icon-item" onclick="mostrarSecciones('proyectos')">
+        <div class="icon-circle">
+          <i class="fas fa-folder-open"></i>
+        </div>
+        <span>Proyectos</span>
+      </div>
+      <!-- Tecnologías -->
+      <div class="icon-item" onclick="mostrarSecciones('tecnologias')">
+        <div class="icon-circle">
+          <i class="fas fa-code"></i>
+        </div>
+        <span>Tecnologías</span>
+      </div>
+      <!-- Experiencia -->
+      <div class="icon-item" onclick="mostrarSecciones('experiencia')">
+        <div class="icon-circle">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <span>Experiencia</span>
+      </div>
+      <!-- Educación -->
+      <div class="icon-item" onclick="mostrarSecciones('educacion')">
+        <div class="icon-circle">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <span>Educación</span>
+      </div>
+      <!-- Competencias -->
+      <div class="icon-item" onclick="mostrarSecciones('competencias')">
+        <div class="icon-circle">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <span>Competiciones</span>
+      </div>
+      <!-- Contacto -->
+      <div class="icon-item" onclick="mostrarSecciones('contacto')">
+        <div class="icon-circle">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <span>Contacto</span>
+      </div>
+      <!-- Intereses -->
+      <div class="icon-item" onclick="mostrarSecciones('intereses')">
+        <div class="icon-circle">
+          <i class="fas fa-heart"></i>
+        </div>
+        <span>Intereses</span>
+      </div>
+      <!-- CV -->
+      <div class="icon-item" onclick="descargarCV()">
+        <div class="icon-circle">
+          <i class="fas fa-file-invoice"></i>
+        </div>
+        <span>CV</span>
+      </div>
+      <!-- . -->
+    </div>
 
     <section id="seccion-secundaria" class="hidden">
       <h2>Resultados de mi portafolio</h2>
