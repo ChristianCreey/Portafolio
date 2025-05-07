@@ -1,0 +1,119 @@
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #ffffff;
+    color: #2d3436;
+}
+
+.tech-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.section-title {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2d3436;
+}
+
+.tech-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.tech-category {
+    background: #ffffff;
+    padding: 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+}
+
+.category-title {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+    color: #2d3436;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+.category-title i {
+    color: #4285f4;
+    font-size: 1rem;
+}
+
+.tech-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem 1.2rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.tech-item i {
+    font-size: 0.8rem;
+}
+
+.tech-item span {
+    font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .tech-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-category {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tech-section {
+        padding: 0.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .tech-item {
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-items {
+        gap: 0.4rem;
+    }
+    
+    .tech-item span {
+        font-size: 0.7rem;
+    }
+    
+    .category-title {
+        font-size: 0.9rem;
+    }
+}
