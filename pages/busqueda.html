@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Búsqueda de Google</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/busqueda.css">
+</head>
+<body class="min-h-screen">
+
+    <header class="p-4 flex items-center justify-between border-b border-custom">
+        <div class="flex items-center">
+            <!-- <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo" class="h-8 mr-6 hidden sm:block"> -->
+              <div class="google-logo-text"> <!-- sm:hidden -->
+                <span class="google-logo-g">C</span>
+                <span class="google-logo-o1">h</span>
+                <span class="google-logo-o2">r</span>
+                <span class="google-logo-g">i</span>
+                <span class="google-logo-l">s</span>
+                <span class="google-logo-e">t</span>
+                <span class="google-logo-o2">i</span>
+                <span class="google-logo-g">a</span>
+                <span class="google-logo-g">n</span>
+            </div>
+        </div>
+
+        <div class="flex-grow max-w-2xl mx-4">
+            <div class="relative flex items-center">
+                <input type="text" value="Algoritmo" class="search-input-custom w-full py-2 px-4 pr-10 rounded-full" placeholder="Buscar en Google o escribir una URL">
+                <div class="absolute right-3 flex items-center space-x-2">
+                    <button class="text-gray-400 hover:text-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm1-1a1 1 0 00-1 1v4a1 1 0 102 0V4a1 1 0 00-1-1zm5 0a1 1 0 00-1 1v4a1 1 0 102 0V4a1 1 0 00-1-1zM10 12a4 4 0 00-4 4H3a1 1 0 100 2h14a1 1 0 100-2h-3a4 4 0 00-4-4z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <button class="text-gray-400 hover:text-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center space-x-3">
+            <button class="text-gray-400 hover:text-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-semibold">
+                C
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto p-4 lg:p-6 flex flex-col lg:flex-row">
+
+        <div class="lg:w-2/3 lg:pr-8">
+            <div class="mb-6 p-4 rounded-lg search-result-card">
+                <div class="flex items-center mb-1">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/220px-Wikipedia-logo-v2.svg.png" alt="Wikipedia Logo" class="h-6 w-6 mr-2 rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/24x24/777/eee?text=W';">
+                    <div>
+                        <a href="#" class="text-sm search-result-link hover:underline">Wikipedia</a>
+                        <div class="text-xs search-result-url">https://es.wikipedia.org › wiki › Algoritmo</div>
+                    </div>
+                </div>
+                <a href="#" class="text-xl search-result-link hover:underline font-medium">Algoritmo - Wikipedia, la enciclopedia libre</a>
+                <p class="text-sm search-result-snippet mt-1">
+                    En términos de programación, un algoritmo es una secuencia de pasos lógicos que permiten solucionar un problema. Por ejemplo: si perdemos el acceso a una cuenta...
+                </p>
+                <div class="mt-2 space-x-3">
+                    <a href="#" class="text-sm text-blue-400 hover:underline">Algoritmo de Euclides</a>
+                    <a href="#" class="text-sm text-blue-400 hover:underline">Análisis de algoritmos</a>
+                    <a href="#" class="text-sm text-blue-400 hover:underline">Ordenación</a>
+                    <a href="#" class="text-sm text-blue-400 hover:underline">Cubo de Rubik</a>
+                </div>
+            </div>
+
+            <div class="mb-6 p-4 rounded-lg search-result-card">
+                <h2 class="text-xl font-semibold mb-3">Más preguntas</h2>
+                <div class="space-y-2">
+                    <details class="group">
+                        <summary class="flex justify-between items-center cursor-pointer py-2 related-question-text">
+                            <span class="group-hover:underline">¿Qué es un algoritmo?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="text-sm search-result-snippet mt-2 pl-2">Un algoritmo es un conjunto de instrucciones o reglas definidas y no-ambiguas, ordenadas y finitas que permite, típicamente, solucionar un problema.</p>
+                    </details>
+                    <hr class="border-custom">
+                    <details class="group">
+                        <summary class="flex justify-between items-center cursor-pointer py-2 related-question-text">
+                           <span class="group-hover:underline">¿Qué es un algoritmo en las redes sociales?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="text-sm search-result-snippet mt-2 pl-2">En redes sociales, un algoritmo determina qué contenido se muestra a los usuarios, basándose en su actividad, interacciones y preferencias.</p>
+                    </details>
+                    <hr class="border-custom">
+                    <details class="group">
+                        <summary class="flex justify-between items-center cursor-pointer py-2 related-question-text">
+                            <span class="group-hover:underline">¿Cuáles son los 4 tipos de algoritmos?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="text-sm search-result-snippet mt-2 pl-2">Existen muchos tipos, pero comúnmente se mencionan: algoritmos de búsqueda, de ordenamiento, voraces (greedy), y de programación dinámica, entre otros.</p>
+                    </details>
+                    <hr class="border-custom">
+                    <details class="group">
+                        <summary class="flex justify-between items-center cursor-pointer py-2 related-question-text">
+                            <span class="group-hover:underline">¿Qué es un algoritmo en la vida real?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="text-sm search-result-snippet mt-2 pl-2">En la vida real, un algoritmo puede ser una receta de cocina, las instrucciones para ensamblar un mueble, o una rutina matutina.</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="mb-6 p-4 rounded-lg search-result-card">
+                <div class="flex items-center mb-1">
+                     <img src="https://concepto.de/wp-content/uploads/2018/08/algoritmo-en-informatica-e1534699600809-400x400.jpg" alt="Concepto.de Logo" class="h-6 w-6 mr-2 rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/24x24/777/eee?text=C';">
+                    <div>
+                        <a href="#" class="text-sm search-result-link hover:underline">Concepto.de</a>
+                        <div class="text-xs search-result-url">https://concepto.de › algoritmo-en-informatica</div>
+                    </div>
+                </div>
+                <a href="#" class="text-xl search-result-link hover:underline font-medium">Algoritmo en Informática - Concepto, partes y ejemplos</a>
+                <p class="text-sm search-result-snippet mt-1">
+                    En informática, se llama algoritmo a una secuencia de instrucciones u operaciones específicas que permiten controlar determinados procesos. Se trata de...
+                </p>
+                 <div class="mt-2 space-x-3">
+                    <a href="#" class="text-sm text-blue-400 hover:underline">¿Qué es un algoritmo?</a>
+                    <a href="#" class="text-sm text-blue-400 hover:underline">¿Para qué sirve un algoritmo?</a>
+                    <a href="#" class="text-sm text-blue-400 hover:underline">Partes de un algoritmo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:w-1/3 lg:pl-6 mt-6 lg:mt-0">
+            <div class="p-4 rounded-lg border border-custom search-result-card">
+                <div class="flex justify-between items-start mb-3">
+                    <h2 class="text-2xl font-semibold knowledge-panel-title">Algoritmo</h2>
+                    <button class="text-gray-400 hover:text-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="md:w-2/3">
+                        <p class="text-sm knowledge-panel-text mb-2">
+                            En matemáticas, lógica, ciencias de la computación y disciplinas relacionadas, un algoritmo es un conjunto de instrucciones o reglas definidas y no-ambiguas, ordenadas y finitas que permite, típicamente, solucionar un problema, realizar un cómputo, procesar datos y llevar a cabo otras tareas o actividades.
+                        </p>
+                        <p class="text-xs text-gray-400">Source: <a href="#" class="search-result-link hover:underline">Wikipedia</a></p>
+                    </div>
+                    <div class="md:w-1/3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Aplicacionesgrafos.png/220px-Aplicacionesgrafos.png" alt="Diagrama de flujo de algoritmo" class="rounded-lg w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/150x200/333/eee?text=Diagrama';">
+                        <p class="text-xs text-center mt-1 text-gray-400">¿QUÉ ES UN ALGORITMO?</p>
+                    </div>
+                </div>
+
+                <hr class="my-4 border-custom">
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">También se buscó</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="#" class="flex flex-col items-center p-2 bg-[#303134] rounded-lg hover:bg-[#3c3d40] transition-colors">
+                            <img src="https://placehold.co/80x60/334155/e2e8f0?text=C%C3%B3digo" alt="Código de programación" class="h-16 w-full object-cover rounded mb-1" onerror="this.onerror=null;this.src='https://placehold.co/80x60/334155/e2e8f0?text=C%C3%B3digo';">
+                            <span class="text-xs text-center text-gray-300">Programación</span>
+                        </a>
+                        <a href="#" class="flex flex-col items-center p-2 bg-[#303134] rounded-lg hover:bg-[#3c3d40] transition-colors">
+                             <img src="https://placehold.co/80x60/4a5568/e2e8f0?text=Cerebro+IA" alt="Cerebro de IA" class="h-16 w-full object-cover rounded mb-1" onerror="this.onerror=null;this.src='https://placehold.co/80x60/4a5568/e2e8f0?text=Cerebro+IA';">
+                            <span class="text-xs text-center text-gray-300">Inteligencia artificial</span>
+                        </a>
+                        <a href="#" class="flex flex-col items-center p-2 bg-[#303134] rounded-lg hover:bg-[#3c3d40] transition-colors">
+                            <img src="https://placehold.co/80x60/2c5282/e2e8f0?text=Python" alt="Logo de Python" class="h-16 w-full object-contain rounded mb-1" onerror="this.onerror=null;this.src='https://placehold.co/80x60/2c5282/e2e8f0?text=Python';">
+                            <span class="text-xs text-center text-gray-300">Python</span>
+                        </a>
+                        <a href="#" class="flex flex-col items-center p-2 bg-[#303134] rounded-lg hover:bg-[#3c3d40] transition-colors">
+                            <img src="https://placehold.co/80x60/5a67d8/e2e8f0?text=Lenguaje" alt="Símbolo de lenguaje de programación" class="h-16 w-full object-cover rounded mb-1" onerror="this.onerror=null;this.src='https://placehold.co/80x60/5a67d8/e2e8f0?text=Lenguaje';">
+                            <span class="text-xs text-center text-gray-300">Lenguaje de programación</span>
+                        </a>
+                    </div>
+                </div>
+                <button class="w-full mt-4 py-2 px-4 bg-gray-600 hover:bg-gray-500 text-white text-sm rounded-lg transition-colors">
+                    Comentarios
+                </button>
+            </div>
+        </div>
+    </div

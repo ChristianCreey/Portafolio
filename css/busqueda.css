@@ -1,0 +1,81 @@
+/* Estilos personalizados para los resultados de búsqueda */
+
+/* Logo de Google texto */
+.google-logo-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.google-logo-g { color: #4285f4; }
+.google-logo-o1 { color: #ea4335; }
+.google-logo-o2 { color: #fbbc05; }
+.google-logo-l { color: #34a853; }
+.google-logo-e { color: #ea4335; }
+
+/* Campos de búsqueda */
+.search-input-custom {
+    background-color: #303134;
+    border: 1px solid #5f6368;
+    color: #e8eaed;
+}
+
+.search-input-custom:focus {
+    background-color: #303134;
+    border-color: #8ab4f8;
+    box-shadow: none;
+}
+
+/* Resultados de búsqueda */
+.search-result-link {
+    color: #8ab4f8;
+    text-decoration: none;
+}
+
+.search-result-url {
+    color: #bdc1c6;
+    font-size: 0.75rem;
+}
+
+.search-result-snippet {
+    color: #bdc1c6;
+    line-height: 1.5;
+}
+
+/* Panel de conocimiento */
+.knowledge-panel-title {
+    color: #e8eaed;
+    margin-bottom: 1rem;
+}
+
+.knowledge-panel-text {
+    color: #bdc1c6;
+    line-height: 1.5;
+}
+
+/* Preguntas relacionadas */
+.related-question-text {
+    color: #e8eaed;
+    transition: color 0.2s;
+}
+
+/* Cards de resultados */
+.search-result-card {
+    background-color: #292a2d;
+    border-radius: 0.5rem;
+    transition: background-color 0.15s;
+}
+
+.search-result-card:hover {
+    background-color: #303134;
+}
+
+/* Elementos comunes */
+body {
+    background-color: #202124;
+    color: #e8eaed;
+}
+
+.border-custom {
+    border-color: #5f6368;
+}
