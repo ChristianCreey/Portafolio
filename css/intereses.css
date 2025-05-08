@@ -1,0 +1,106 @@
+/* intereses.css */
+:root {
+    --google-blue: #4285f4;
+    --google-red: #ea4335;
+    --google-yellow: #fbbc05;
+    --google-green: #34a853;
+    --bg-color: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg-color);
+    color: #202124;
+    margin: 0;
+    padding: 20px;
+}
+
+.google-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.color-bar {
+    display: flex;
+    height: 8px;
+    margin: 1rem 0;
+}
+
+.color-bar div {
+    flex: 1;
+}
+
+.blue { background: var(--google-blue); }
+.red { background: var(--google-red); }
+.yellow { background: var(--google-yellow); }
+.green { background: var(--google-green); }
+
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.interest-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    padding: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.interest-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.interest-item i {
+    font-size: 1.5rem;
+    color: var(--google-blue);
+    width: 40px;
+    text-align: center;
+}
+
+.special-interest {
+    max-width: 1200px;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+.moving-chip {
+    display: inline-flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    background: #f8f9fa;
+    border-radius: 30px;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .interest-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .moving-chip {
+        animation: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

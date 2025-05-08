@@ -1,0 +1,203 @@
+/* competiciones.css */
+:root {
+    --primary-color: #4285f4;
+    --secondary-color: #34a853;
+    --accent-color: #fbbc05;
+    --text-color: #2d3436;
+    --bg-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+}
+
+.hackathon-container {
+    background: white;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 2rem;
+    margin: 1rem;
+}
+
+/* Encabezado */
+.achievement-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.trophy-badge {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 80px;
+}
+
+.trophy-badge i {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.title-container h1 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.score-chip {
+    background: rgba(66,133,244,0.1);
+    color: var(--primary-color);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Metadatos */
+.metadata-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.meta-item i {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    min-width: 30px;
+}
+
+/* Tecnologías */
+.tech-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.tech-item {
+    background: rgba(66,133,244,0.1);
+    color: var(--primary-color);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.tech-item:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Descripción Técnica */
+.technical-description {
+    margin: 2rem 0;
+}
+
+.achievement-list {
+    list-style: none;
+}
+
+.achievement-list li {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: var(--bg-color);
+    border-radius: 10px;
+}
+
+.achievement-list i {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+}
+
+/* Resultados */
+.performance-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border-radius: 12px;
+    color: white;
+}
+
+.metric-circle {
+    width: 80px;
+    height: 80px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.metric-circle small {
+    display: block;
+    font-size: 0.6rem;
+    font-weight: normal;
+}
+
+.repo-button {
+    background: white;
+    color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+}
+
+.repo-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .achievement-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .metadata-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .performance-card {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}
