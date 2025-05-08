@@ -102,6 +102,12 @@ color: #34a853;
     transition: box-shadow 0.3s;
 }
 
+.search-bar form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .search-bar input {
 width: 90%;
 max-width: 600px;

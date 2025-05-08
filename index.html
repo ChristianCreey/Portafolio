@@ -31,7 +31,8 @@
       <span class="l">n</span>
     </h1>
     <!-- Buscador de información -->
-    <div class="search-container">
+
+    <!-- <div class="search-container">
       <div class="search-bar">
         <div class="search-icon">
           <i class="fas fa-search"></i>
@@ -46,11 +47,26 @@
           </div>
         </div>    
       </div>
-      <!-- <div class="search-buttons">
-        <button>Buscar en Christian</button>
-        <button>Voy a tener suerte</button>
-      </div> -->
+    </div> -->
+
+    <div class="search-container">
+      <form action="pages/busqueda.html" method="GET" class="search-bar">
+        <div class="search-icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <input type="text" name="q" placeholder="Buscar información">
+        <div class="search-actions">
+          <div class="voice-search">
+            <i class="fas fa-microphone"></i>
+          </div>
+          <div class="image-search">
+            <i class="fas fa-camera"></i>
+          </div>
+        </div>
+      </form>
     </div>
+
+
     <!-- Iconos -->
     <div class="icon-container">
       <!-- Sobre mí -->
