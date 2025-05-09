@@ -1,0 +1,162 @@
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+    color: #2d3436;
+    line-height: 1.6;
+}
+
+/* Barra de acciones */
+.action-bar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.action-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.action-icon {
+    color: #4285f4;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.action-icon:hover {
+    transform: translateY(-2px);
+    color: #357abd;
+}
+
+/* Sección Educación */
+.education-section {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #2d3436;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.education-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+}
+
+.education-header h2 {
+    font-size: 1.5rem;
+    color: #2d3436;
+}
+
+.education-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.institution {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.institution i {
+    color: #4285f4;
+    font-size: 1.2rem;
+}
+
+.education-details {
+    display: grid;
+    gap: 1rem;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.detail-label {
+    color: #666;
+    font-weight: 500;
+}
+
+.detail-value {
+    color: #2d3436;
+    font-weight: 600;
+}
+
+.highlight {
+    color: #34a853;
+    font-weight: 700;
+}
+
+.specialization {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    color: #4285f4;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .education-section {
+        padding: 1rem;
+    }
+    
+    .education-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .action-bar {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .education-card {
+        padding: 1.5rem;
+    }
+    
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
