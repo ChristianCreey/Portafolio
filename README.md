@@ -1,4 +1,4 @@
-# Portafolio-Google
+# Portafolio
 
 
-https://christiancreey.github.io/Portafolio-Google/
+https://christiancreey.github.io/Portafolio/
